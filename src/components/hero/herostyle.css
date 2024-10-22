@@ -1,0 +1,41 @@
+.moveLeft {
+  animation: moveToLeft 500ms ease both;
+}
+.moveRight {
+  animation: moveToRight 500ms ease both;
+}
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1128px);
+  }
+}
+@keyframes moveToRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1128px);
+  }
+}
+@media (max-width: 720px) {
+  @keyframes moveToLeft {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-478px);
+    }
+  }
+
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(478px);
+    }
+  }
+}
