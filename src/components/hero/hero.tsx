@@ -120,7 +120,7 @@ const Hero = () => {
 
 export default Hero;
 
-const HeroCard = ({ children }: any) => {
+const HeroCard = ({ children }: { children: any }) => {
 
 
   return (
@@ -148,7 +148,7 @@ const HeroCard = ({ children }: any) => {
 }
 
 
-const ShowInfoHero = ({ data, classToMove }) => {
+const ShowInfoHero = ({ data, classToMove }: { data: any, classToMove: any }) => {
   return (
 
     <section className={`relative min-w-[430px] w-screen max-w-[1080px]  h-full ${classToMove} px-2   `} >
@@ -165,15 +165,15 @@ const ShowInfoHero = ({ data, classToMove }) => {
 }
 
 
-const BotonHero = ({ title, action }) => {
+const BotonHero = ({ title, action }: { title: any, action: any }) => {
   return (
     <div
-      className="bg-blue-500 text-white w-12 h-12 rounded-md  border-2 hover:border-white border-transparent active:bg-blue-600 active:border-slate-200 active:translate-y-[2px] flex justify-center items-center cursor-pointer"
+      className="bg-primary text-white w-12 h-12 rounded-md  border-2 hover:border-white border-transparent active:bg-blue-600 active:border-slate-200 active:translate-y-[2px] flex justify-center items-center cursor-pointer"
       onClick={action} >{title}</div>
   )
 }
 
-const DotsHero = ({ indexBaner, setIndexBaner }) => {
+const DotsHero = ({ indexBaner, setIndexBaner }: { indexBaner: any, setIndexBaner: any }) => {
   return (
     <div className="text-red-500  h-16  flex flex-col sm:flex-row gap-5 justify-center items-center mt-2 absolute top-32 sm:top-[290px]  right-4 sm:left-0 sm: z-20">
       {
@@ -185,7 +185,7 @@ const DotsHero = ({ indexBaner, setIndexBaner }) => {
               className="size-3  cursor-pointer flex justify-center items-center"
             >
               <p
-                className={` ${index === indexBaner ? 'bg-blue-500 size-3' : 'bg-blue-100  '} hover:bg-indigo-400 size-2 transition-all ease-in timeout-300  rounded-full cursor-pointer `}
+                className={` ${index === indexBaner ? 'bg-primary size-3' : 'bg-red-300   '} hover:bg-indigo-400 size-2 transition-all ease-in timeout-300  rounded-full cursor-pointer `}
 
               ></p>
 

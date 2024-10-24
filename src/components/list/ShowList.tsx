@@ -58,7 +58,7 @@ const ShowList = () => {
 
 export default ShowList;
 
-const NormalCard = ({ image, title, type }) => {
+const NormalCard = ({ image, title }: { image: string, title: string, type?: string }) => {
   return (
     <div className="other-option-card">
       <img
@@ -71,7 +71,7 @@ const NormalCard = ({ image, title, type }) => {
   )
 }
 
-const MostViewedCard = ({ image, title, type, id }) => {
+const MostViewedCard = ({ image, title, id }: { image: string, title: string, type?: string, id: number }) => {
   return (
     <div className="most-card-1">
       <div className="card-1-image-container">
@@ -90,7 +90,7 @@ const MostViewedCard = ({ image, title, type, id }) => {
   )
 }
 
-const MostViewedCard2 = ({ image, title, type, id }) => {
+const MostViewedCard2 = ({ image, title, id }: { image: string, title: string, type?: string, id: number }) => {
   return (
     <div className={`most-card-2 ${id % 2 == 0 ? " cardPar" : "carInPar "}`} >
 

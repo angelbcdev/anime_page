@@ -63,7 +63,7 @@ const Carusel = () => {
 
 export default Carusel;
 
-const BaseCentralCarusel = ({ claseStopCarusel, addDegree }) => {
+const BaseCentralCarusel = ({ claseStopCarusel, addDegree }: { claseStopCarusel: string, addDegree: number }) => {
 
   useEffect(() => {
     // alert('Carrusel iniciado');
@@ -88,13 +88,13 @@ const BaseCentralCarusel = ({ claseStopCarusel, addDegree }) => {
 
 }
 
-const ButtonCarusel = ({ children, action }) => {
+const ButtonCarusel = ({ children, action }: { children: any, action: any }) => {
   return (
     <button onClick={action}>{children}</button>
   );
 };
 
-const ElementOFCarusel = ({ top = NaN, bottom = NaN, left = NaN, right = NaN, claseStopCarusel, children, addDegree }) => {
+const ElementOFCarusel = ({ top = NaN, bottom = NaN, left = NaN, right = NaN, claseStopCarusel, children, addDegree }: { top?: number, bottom?: number, left?: number, right?: number, claseStopCarusel: string, children: any, addDegree: number }) => {
   return (
     <div style={{ top, bottom, left, right, transform: `rotate(${addDegree}deg)` }}
       className={`${claseStopCarusel} rotarElement border-2 border-transparent hover:border-white text-white size-20 bg-slate-500/90 absolute rounded-full flex justify-center items-center`}>
