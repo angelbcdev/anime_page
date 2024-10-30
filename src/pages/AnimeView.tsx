@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { AnimeDetails } from "../const";
 
 const AnimeView = () => {
   const location = useLocation()
-  const [dataAnime, setDataAnime] = useState(null)
+  const [dataAnime, setDataAnime] = useState<null | AnimeDetails>(null)
 
 
 
@@ -16,18 +17,18 @@ const AnimeView = () => {
 
   }, [])
 
-  const style = {
-    backgroundImage: `url(${dataAnime?.image})`,
-    backgroundSize: 'cover',
-    filter: 'blur(20px)',
-    // height: '600px', // O el tamaño que desees
-    // width: '1080px', // O el tamaño que desees
-    position: 'relatives'
-  };
+
 
   return (
     <section className="relative">
-      <section style={style} className={`h-[1200px] sm:h-screen w-screen max-w-[1040px] z-0  mx-auto  flex justify-center items-center`}>
+      <section style={{
+        backgroundImage: `url(${dataAnime?.image})`,
+        backgroundSize: 'cover',
+        filter: 'blur(20px)',
+        // height: '600px', // O el tamaño que desees
+        // width: '1080px', // O el tamaño que desees
+        position: 'relative'
+      }} className={`h-[1200px] sm:h-screen w-screen max-w-[1040px] z-0  mx-auto  flex justify-center items-center`}>
 
       </section>
       <div className="z-10 w-full  bg-black/40 h-[1200px] sm:h-screen  absolute top-0 flex justify-center">

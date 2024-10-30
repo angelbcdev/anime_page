@@ -120,7 +120,7 @@ export default CatalogoAnime;
 
 
 
-const BtnPaginate = ({ active, action, children }) => {
+const BtnPaginate = ({ active, action, children }: any) => {
   return (
     <div
       onClick={action}

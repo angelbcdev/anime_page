@@ -5,10 +5,7 @@ import { animelist } from "../../const";
 const dummyData = animelist.slice(0, 5)
 
 
-const datab = [
 
-
-]
 
 
 

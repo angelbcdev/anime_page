@@ -1,6 +1,13 @@
 // "sub", "dub", "chinese", "trending",;
-
-export const animelist = [
+export interface AnimeDetails {
+  image: string;
+  imageBaner: string;
+  title: string;
+  type: string;
+  category: Array<string>;
+  details: string;
+}
+export const animelist: AnimeDetails[] = [
   {
     image:
       "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bcd84731a3eda4f4a306250769675065.jpg",

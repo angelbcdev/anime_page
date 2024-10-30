@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { animelist } from "../../const";
+import { AnimeDetails, animelist } from "../../const";
 
 
 import useChanges from "../../hooks/useChanges";
 
 const SearhBar = () => {
   const [isFocused, setIsFocused] = useState(false)
-  const [allData, setAllData] = useState([])
+  const [allData, setAllData] = useState<AnimeDetails[]>([])
   const [msj, setMsj] = useState('')
   const { goTo } = useChanges()
 
@@ -59,7 +59,7 @@ const SearhBar = () => {
           {
             allData.length > 0 ?
               allData.map(data => (
-                <div key={data.tilte} onClick={() => goTo(data)} className="hover:bg-slate-300 px-2 cursor-pointer mt-3  rounded-md" >{data.title}</div>
+                <div key={data.title} onClick={() => goTo(data)} className="hover:bg-slate-300 px-2 cursor-pointer mt-3  rounded-md" >{data.title}</div>
               ))
               : <p className="text-slate-300"> {msj} </p>
           }
