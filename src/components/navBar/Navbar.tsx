@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -6,9 +7,11 @@ const Navbar = () => {
   return (
     <section className="w-screen bg-bgPrimary fixed top-0 z-[90] ">
       <div className="max-w-[1080px] bg-sla navbar relative mx-auto top-0">
-
-        <img className="h-20 mr-20" src="/logo.png" alt="" />
-
+        <Link to={"/"} onClick={() => {
+          window.scroll({ top: 0, behavior: "smooth" })
+        }}>
+          <img className="h-20 mr-20" src="/logo.png" alt="" />
+        </Link>
         <ul className="navbar-link-container hidden sm:flex">
           <li>
             <a href="#UPDATED">UPDATED</a>

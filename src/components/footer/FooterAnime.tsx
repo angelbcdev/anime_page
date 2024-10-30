@@ -1,7 +1,7 @@
 const FooterAnime = () => {
 
   return (
-    <footer className="px-8 w-full h-[480px] sm:h-[200px] ">
+    <footer className="px-8 w-full max-w-[1080px]   h-[480px] sm:h-[250px] bg-bgPrimary ">
       <div className="BACK-to-top-div  rounded-xl  px-4">
 
         <div className="svg-up">
