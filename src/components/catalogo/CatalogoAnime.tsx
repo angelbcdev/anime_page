@@ -24,11 +24,11 @@ const CatalogoAnime = () => {
 
 
   return (
-    <section className="anime-catalog">
+    <section id="UPDATED" className="anime-catalog">
       <div className="w-full max-w-[1080px] flex justify-between py-4">
         <div className="catalog-options-links ml-8 ">
           <h2 className="text-white" >RECENTLY<br />UPDATED</h2>
-          <ul className="selection hidden sm:flex">
+          <ul className="selection ">
             {
               filerOptions.map(option => (
                 <li key={option}
@@ -39,7 +39,7 @@ const CatalogoAnime = () => {
             }
           </ul>
         </div>
-        <div className="catalog-options-arrows flex mr-8 gap-4 opacity-40">
+        <div className="catalog-options-arrows  mr-8 gap-4 opacity-40 hidden sm:flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -72,7 +72,7 @@ const CatalogoAnime = () => {
           </svg>
         </div>
       </div>
-      <div className="grid grid-flow-row grid-cols-3 sm:grid-cols-7  gap-1  justify-center  sm:h-[480px]" id="card-container">
+      <div className="grid grid-flow-row grid-cols-3 sm:grid-cols-7  gap-1  justify-center  sm:h-[480px] px-4" id="card-container">
         {
           animeToShow.map((anime, index) => {
             return <CataalogoCard key={index} image={anime.image} title={anime.title} type={anime.type} category={anime.category} />

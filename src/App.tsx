@@ -13,9 +13,9 @@ function App() {
 
 
   return (
-    <section className='bg-[#212121d6] w-screen h-full'>
-      <div className='bg-[#212121] w-screen  max-w-[1080px] h-full mx-auto'>
-        <Navbar />
+    <section id='navbar' className=' bg-gradient-to-br to-[#212121b0]  from-[#212121] w-screen h-full '>
+      <Navbar />
+      <div className='bg-[#212121] w-screen  max-w-[1080px] h-full mx-auto pt-24 pb-8'>
         <Hero />
         <SearhBar />
         <CatalogoAnime />

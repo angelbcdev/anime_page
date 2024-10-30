@@ -2,7 +2,7 @@ const FooterAnime = () => {
 
   return (
     <footer className="px-8 w-full h-[480px] sm:h-[200px] ">
-      <div className="BACK-to-top-div">
+      <div className="BACK-to-top-div  rounded-xl  px-4">
 
         <div className="svg-up">
           <svg
@@ -20,7 +20,7 @@ const FooterAnime = () => {
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M15 6l-6 6l6 6" />
           </svg>
-          <a href="#navbar">BACK TO TOP</a>
+          <a className="hover:bg-primary rounded-xl cursor-pointer px-4 hover:text-white" href="#navbar">BACK TO TOP</a>
         </div>
       </div>
       <ul className="flex flex-col sm:flex-row justify-center gap-4 sm:h-[100px] sm:items-center">
