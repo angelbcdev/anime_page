@@ -1,33 +1,11 @@
 import { useEffect, useState } from "react";
 import "./herostyle.css"
+import { animelist } from "../../const";
 
-const dummyData = [{
-  name: "Dan da Dam",
-  img: "https://assets-prd.ignimgs.com/2024/09/12/ddd-blogroll-1726165218086.jpg?width=828",
-  details: "lorem ipsum is a dummy text used in laying out print, graphic design, typography, UI design, and UX design. Lorem Ipsum is used in laying out print, graphic design, typography, UI design, and UX design."
-},
-{
-  name: "Blue Box",
-  img: "https://external-preview.redd.it/blue-box-anime-announced-teaser-visual-v0-x4gJPE0ZEjqVgYDxdvDj0nllb6RckcDeEGrJxGoAFGU.jpg?width=1080&crop=smart&auto=webp&s=526ae69b737de3209fab055ecb32b7ed4c7369f2",
-  details: "lorem ipsum is a dummy text used in laying out print, graphic design, typography, UI design, and UX design. Lorem Ipsum is used in laying out print, graphic design, typography, UI design, and UX design."
-},
-{
-  name: "fireforce company 8 season 2",
-  img: "https://cdn.oneesports.gg/cdn-data/2024/07/Anime_FireForce_Company8_Season2-1024x576.jpg",
-  details: "lorem ipsum is a dummy text used in laying out print, graphic design, typography, UI design, and UX design. Lorem Ipsum is used in laying out print, graphic design, typography, UI design, and UX design."
-},
-{
-  name: "bleach final season",
-  img: "https://imgs.search.brave.com/1eJp3OC1j1_2CjVfKhPwFv6D7gSv2cMBPB7V2Tiqfaw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hbHBo/YW5ld3NjYWxscy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMTAvQmxlYWNo/LU5ldy1TZWFzb24t/Mi5qcGc",
-  details: "lorem ipsum is a dummy text used in laying out print, graphic design, typography, UI design, and UX design. Lorem Ipsum is used in laying out print, graphic design, typography, UI design, and UX design."
-},
+const dummyData = animelist.slice(0, 5)
 
-{
-  name: "Solo Leveling",
-  img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/03/sung-jinwoo-holding-up-a-weapon-with-his-past-weak-self-to-his-left-surrounded-in-orange-flames-and-his-new-strong-self-to-his-right-surrounded-in-blue-flames-in-solo-leveling.jpg",
-  details: "lorem ipsum is a dummy text used in laying out print, graphic design, typography, UI design, and UX design. Lorem Ipsum is used in laying out print, graphic design, typography, UI design, and UX design."
-},
 
+const datab = [
 
 
 ]
@@ -152,10 +130,10 @@ const ShowInfoHero = ({ data, classToMove }: { data: any, classToMove: any }) =>
   return (
 
     <section className={`relative min-w-[430px] w-screen max-w-[1080px]  h-full ${classToMove} px-2   `} >
-      <img className=" relative z-0 w-full  h-full rounded-lg" src={data.img} alt="ha" />
+      <img className=" relative z-0 w-full  h-full rounded-lg" src={data.imageBaner.length > 3 ? data.imageBaner : data.image} alt="ha" />
       <div className="absolute top-0 z-10 w-full h-full flex flex-col justify-center p-4 rounded-lg bg-gradient-to-r from-black to-transparent pr-16">
         <p className="text-3xl font-bold text-yellow-600 pb-6">rank</p>
-        <p className="text-white text-4xl font-bold mb-4" >{data.name}</p>
+        <p className="text-white text-4xl font-bold mb-4" >{data.title}</p>
         <p className="w-[600px] text-slate-100 hidden sm:block" >{data.details}</p>
 
       </div>

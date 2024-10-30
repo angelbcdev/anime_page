@@ -11,7 +11,7 @@ const ShowList = () => {
           <p>view all</p>
         </div>
         <div id="other-option-container" className="other-option-container">
-          {animelist.map((anime) => (
+          {animelist.slice(0, 14).map((anime) => (
             <NormalCard
               anime={anime}
 
@@ -43,7 +43,7 @@ const ShowList = () => {
           <p>view all</p>
         </div>
         <div id="other-option-container2" className="other-option-container">
-          {animelist.map((anime) => (
+          {animelist.slice(0, 14).map((anime) => (
             <NormalCard
               anime={anime}
 

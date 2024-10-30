@@ -5,7 +5,7 @@ const AnimeView = () => {
   const location = useLocation()
   const [dataAnime, setDataAnime] = useState(null)
 
-  console.log('location', location.state);
+
 
   useEffect(() => {
     setDataAnime(location.state)
