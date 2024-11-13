@@ -20,7 +20,7 @@ const CataalogoCard = ({ image, title, type, category }: { image: string, title:
       </div>
       <img className="h-[200px] absolute top-0 z-0 sm:h-[220px] w-full rounded-lg " src={image} alt="" />
       <p className="catalog-card-title">{title}</p>
-      <div className="bg-bgPrimaryd data-catalogo hidden group-hover:flex" >
+      {/* <div className="bg-bgPrimaryd data-catalogo hidden group-hover:flex" >
         <p className="text-center  text-xl"> {title}</p>
         <div className="flex flex-col justify-center items-center ">
           {
@@ -31,7 +31,7 @@ const CataalogoCard = ({ image, title, type, category }: { image: string, title:
         </div>
 
         <button className="bg-primary mx-auto px-4 py-1 rounded-md">Play</button>
-      </div>
+      </div> */}
     </div>
   )
 }

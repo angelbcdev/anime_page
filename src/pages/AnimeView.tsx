@@ -34,7 +34,7 @@ const AnimeView = () => {
       <div className="z-10 w-full  bg-black/40 h-[1200px] sm:h-screen  absolute top-0 flex justify-center">
         <div className=" max-w-[1080px] mt-40"  >
           <div className="sm:w-[800px] w-[430px]  flex flex-col sm:flex-row ju items-center h-[400px] sm:h-[400px]   gap-6">
-            <img className="w-[320px] hidden sm:block" src={dataAnime?.image} alt="fe" />
+            <img className="w-[320px] hidden sm:block rounded-md relative bottom-4" src={dataAnime?.image} alt="fe" />
             <section className="flex flex-col gap-6 justify-center items-center ">
               <div className="w-full flex gap-3 text-white ">
                 <Link to={"/"}>Home</Link>

@@ -127,12 +127,15 @@ const ShowInfoHero = ({ data, classToMove }: { data: any, classToMove: any }) =>
   return (
 
     <section className={`relative min-w-[430px] w-screen max-w-[1080px]  h-full ${classToMove} px-2   `} >
-      <img className=" relative z-0 w-full  h-full rounded-lg" src={data.imageBaner.length > 3 ? data.imageBaner : data.image} alt="ha" />
-      <div className="absolute top-0 z-10 w-full h-full flex flex-col justify-center p-4 rounded-lg bg-gradient-to-r from-black to-transparent pr-16">
-        <p className="text-3xl font-bold text-yellow-600 pb-6">rank</p>
-        <p className="text-white text-4xl font-bold mb-4" >{data.title}</p>
-        <p className="w-[600px] text-slate-100 hidden sm:block" >{data.details}</p>
+      <div className="relative w-full h-full flex right-0 justify-end">
+        <img className=" absolute z-10 w-[1000px] right-0  h-full rounded-lg filter blur-md" src={data.imageBaner.length > 3 ? data.imageBaner : data.image} alt="ha" />
+        <img className=" relative z-10 w-3/5 right-0  h-full rounded-lg" src={data.imageBaner.length > 3 ? data.imageBaner : data.image} alt="ha" />
+        <div className="absolute top-30 z-10 w-full h-full flex flex-col justify-center p-4 rounded-lg bg-gradient-to-r from-black to-transparent pr-16">
+          <p className="text-3xl font-bold text-yellow-600 pb-6">rank</p>
+          <p className="text-white text-4xl font-bold mb-4" >{data.title}</p>
+          <p className="w-[600px] text-slate-100 hidden sm:block" >{data.details}</p>
 
+        </div>
       </div>
     </section>
 
