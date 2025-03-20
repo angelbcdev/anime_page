@@ -1,10 +1,9 @@
 # Anime View
 
-![Anime View Banner](https://anime-view.netlify.app/banner.png)  
 A sleek and modern anime streaming platform built using React.
 
 ## 🌟 Live Demo
-[Anime View](https://anime-view.netlify.app/)
+<a target="_blank" href="https://anime-view.netlify.app/"> Go to the Live Demo </a>
 
 ## 🚀 Features
 - Browse a vast collection of anime series and movies.
