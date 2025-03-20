@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to={"/"} onClick={() => {
           window.scroll({ top: 0, behavior: "smooth" })
         }}>
-          <img className="h-20 mr-20" src="/logo.png" alt="" />
+          <p className="text-red-600 text-3xl font-bold cursor-pointer ml-4 sm:text-4xl" >Anime Page</p>
         </Link>
         <ul className="navbar-link-container hidden sm:flex">
           <li>

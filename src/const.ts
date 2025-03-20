@@ -60,8 +60,9 @@ export const animelist: AnimeDetails[] = [
   },
   {
     image:
-      "https://imgs.search.brave.com/0MB0ooibqDbZmFFsKc5ZxnUaX1N-R6IqrwEjAwpRffg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9ETTBObVZq/TXpVdE9USmhOaTAw/TjJaaExXRmtZbU10/WW1abU5qUmlZMk0x/WVdZNFhrRXlYa0Zx/Y0dkZVFYVnlPVGd4/T1RBNU1EZ0AuanBn",
-    imageBaner: "",
+      "https://imgs.search.brave.com/mXK0zBQcUOiAQqUXb4fgIQgOaYlrW38jfY753F7IEKs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk16TmhaVGRt/TkRZdE5UQTBOQzAw/TW1ObUxXSXpZalV0/TmpnNU56TmxZV1Ew/TjJFNVhrRXlYa0Zx/Y0djQC5qcGc",
+    imageBaner:
+      "https://imgs.search.brave.com/mXK0zBQcUOiAQqUXb4fgIQgOaYlrW38jfY753F7IEKs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk16TmhaVGRt/TkRZdE5UQTBOQzAw/TW1ObUxXSXpZalV0/TmpnNU56TmxZV1Ew/TjJFNVhrRXlYa0Zx/Y0djQC5qcGc",
     title: "jujutsu kaisen 0",
     type: "tv",
     category: ["sub", "trending"],

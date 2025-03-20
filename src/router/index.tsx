@@ -8,7 +8,7 @@ const MyRoutes = () => {
     <Routes>
       {
         myRoutes.map(rute => (
-          <Route path={rute.path} element={<rute.element />} />
+          <Route key={rute.path} path={rute.path} element={<rute.element />} />
         ))
       }
       <Route path='*' element={<p className="h-screen flex justify-center items-center text-2xl text-white"> 404 No Found</p>} />
